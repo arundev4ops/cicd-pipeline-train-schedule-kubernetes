@@ -1,5 +1,5 @@
 kind: Service
-apiVersion: v1/apps
+apiVersion: v1/v1beta1
 metadata:
   name: train-schedule-service
 spec:
