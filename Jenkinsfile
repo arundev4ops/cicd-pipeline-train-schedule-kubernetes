@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        //be sure to replace "willbla" with your own Docker Hub username
+        
         DOCKER_IMAGE_NAME = "arun03nie/train-schedule-kube"
     }
     stages {
@@ -20,7 +20,7 @@ pipeline {
                 script {
                     app = docker.build(DOCKER_IMAGE_NAME)
                     app.inside {
-                        sh 'echo Hello, World!'
+                        sh ' Docker Build Successful'
                     }
                 }
             }
